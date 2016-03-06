@@ -26,5 +26,10 @@ namespace CoffeeHouse.Web.Controllers
 
             return View();
         }
+
+        public ActionResult BootstrapTest()
+        {
+            return View();
+        }
     }
 }
