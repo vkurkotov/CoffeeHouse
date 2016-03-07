@@ -15,24 +15,15 @@
 </head>
 <body>
 <div class="container">
-    <div class="alert alert-success fade in">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Success!</strong> Indicates a successful or positive action.
-    </div>
-
-    <div class="alert alert-info">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Info!</strong> Indicates a neutral informative change or action.
-    </div>
-
-    <div class="alert alert-warning">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Warning!</strong> Indicates a warning that might need attention.
-    </div>
-
-    <div class="alert alert-danger">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Sony</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Tablet</a></li>
+            <li><a href="#">Smartphone</a></li>
+        </ul>
     </div>
 </div>
 </body>
