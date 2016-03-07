@@ -15,10 +15,46 @@
 </head>
 <body>
 <div class="container">
-    <p><button type="button" class="btn btn-lg btn-primary">Эспрессо <span class="badge">7</span></button></p>
-    <p><button type="button" class="btn btn-lg btn-primary">Американо <span class="badge">6</span></button></p>
-    <p><button type="button" class="btn btn-lg btn-primary">Латте <span class="badge">0</span></button>
-    </p>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>
+                <button type="button" class="btn btn-lg btn-primary">Эспрессо <span class="badge">7</span></button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-lg btn-primary">Американо <span class="badge">6</span></button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-lg btn-primary">Латте <span class="badge">0</span></button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-lg btn-error more-button">Ещё <span class="label label-danger">+</span></button>
+            </p>
+        </div>
+        <div class="col-sm-4 additional-products" style="display: none">
+            <p>
+                <button type="button" class="btn btn-lg btn-info">Манго <span class="badge">0</span></button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-lg btn-info">Сгущенка <span class="badge">0</span></button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-lg btn-info">Тропик <span class="badge">0</span></button>
+            </p>
+        </div>
+        <div class="col-sm-4">
+
+            <p>
+                <button type="button" class="btn btn-lg btn-success">Сливки <span class="badge">2</span></button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-lg btn-success">Молоко <span class="badge">5</span></button>
+            </p>
+            <p>
+                <button type="button" class="btn btn-lg btn-success">Сгущенка <span class="badge">0</span></button>
+            </p>
+        </div>
+    </div>
+
     <div>
         <a href="#" class="thumbnail">
             <h3>Типа весь заказ: <strong class="lead">150 грн</strong>
@@ -27,5 +63,10 @@
     </div>
 
 </div>
+<script>
+    $(".more-button").on("click", function() {
+        $(".additional-products").toggle();
+    })
+</script>
 </body>
 </html>
